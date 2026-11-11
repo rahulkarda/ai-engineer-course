@@ -7,9 +7,9 @@
 - Learning approach: Python-first (Phase 1)
 
 ## Generation state (agent edits this)
-- Last generated: phase-7-system-design/week-12 (all 12 weeks complete, model IDs -> Claude 5 family)
-- NEXT: electives + supplementary wave (DSPy/guardrails/richer-Claude + frontier capabilities)
-- Completed units: [P1..P7 all weeks — lessons + solutions + assessment + project each]
+- Last generated: electives (7 modules) — COURSE COMPLETE
+- NEXT: — (all planned content generated)
+- Completed units: [P1..P7 all weeks; electives: dspy, guardrails, claude-ecosystem, voice-realtime, computer-use, reasoning-models, long-term-memory]
 
 ## Phase completion
 - [x] P1 Python & backend (wk 1–8)
@@ -19,7 +19,7 @@
 - [x] P5 Agentic AI engineering (wk 1–12)
 - [x] P6 Production AI & distributed systems (wk 1–12)
 - [x] P7 System design & interview prep (wk 1–12)
-- [ ] Electives + supplementary wave (DSPy, guardrails, richer Claude ecosystem, frontier capabilities)
+- [x] Electives (DSPy, Guardrails, Claude ecosystem, voice/realtime, computer-use, reasoning models, long-term memory)
 - [ ] P2 CS & software design
 - [ ] P3 ML & LLM foundations
 - [ ] P4 RAG engineering

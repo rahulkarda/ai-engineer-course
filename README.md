@@ -15,7 +15,7 @@ Built as full self-teaching Markdown: concepts from first principles, worked exa
 | **5** | 10–12 | Agentic AI engineering (primary specialization) |
 | **6** | 13–15 | Production AI & distributed systems |
 | **7** | 16–18 | System design & interview prep |
-| **Electives** | ongoing | Cloud vendors, AI infra, agent ecosystems, extra domains |
+| **Electives** | ongoing | DSPy, Guardrails, Claude ecosystem, voice/realtime, computer-use, reasoning models, long-term memory |
 
 ~1,000–1,170 study hours. Python-first by design.
 
