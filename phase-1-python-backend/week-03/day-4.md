@@ -40,7 +40,7 @@ from dataclasses import dataclass, field
 class Transaction:
     amount: float
     type: str
-    timestamp: str = field(default_factory=lambda: datetime.utcnow().isoformat())
+    timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
 ```
 
 ## How it works internally
@@ -60,7 +60,7 @@ class Transaction:
 from __future__ import annotations
 import logging
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from functools import total_ordering
 
 logger = logging.getLogger(__name__)
@@ -71,7 +71,7 @@ class Transaction:
     """Immutable record of a single account operation."""
     amount: float
     type: str  # "deposit" | "withdrawal"
-    timestamp: str = field(default_factory=lambda: datetime.utcnow().isoformat())
+    timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
 
     def __post_init__(self) -> None:
         if self.amount <= 0:

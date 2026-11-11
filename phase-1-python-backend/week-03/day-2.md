@@ -42,7 +42,7 @@ Name mangling: `self.__balance` inside class `Account` is stored as `self._Accou
 # account.py
 from __future__ import annotations
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 
 logger = logging.getLogger(__name__)
 
@@ -57,7 +57,7 @@ class Account:
             raise ValueError("Balance cannot be negative")
         self.owner = owner
         self.__balance: float = balance   # name-mangled; not a true secret
-        self._created_at: str = datetime.utcnow().isoformat()  # internal
+        self._created_at: str = datetime.now(timezone.utc).isoformat()  # internal
 
     # ── Instance methods ─────────────────────────────────────────────────
     def deposit(self, amount: float) -> None:

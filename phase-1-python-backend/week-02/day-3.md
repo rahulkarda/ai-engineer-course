@@ -71,6 +71,7 @@ dis.dis(add)   # shows LOAD_FAST for local variables
 # functions_scope.py
 from __future__ import annotations
 import logging
+from collections.abc import Callable
 from typing import Any
 
 log = logging.getLogger(__name__)
@@ -118,7 +119,7 @@ print(apply_discount(500.0, discount=0.1, currency="EUR"))
 
 
 # --- Closure: factory that captures config ---
-def make_fee_calculator(rate: float) -> callable:
+def make_fee_calculator(rate: float) -> Callable[[float], float]:
     """Return a fee calculator fixed at a given rate."""
     def calculator(amount: float) -> float:
         return round(amount * rate, 2)   # 'rate' is captured in a cell

@@ -209,7 +209,7 @@ if __name__ == "__main__":
 4. Use `enumerate` to print each character of `"Python"` with its index, e.g. `0: P`.
 5. Use `zip` to pair `["Alice", "Bob"]` with `[90, 85]` and print `"Alice: 90"` etc.
 
-(Solutions: ../../solutions/week-01/day-4.md)
+(Solutions: ../solutions/week-01/day-4.md)
 
 ## Self-check
 

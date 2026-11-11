@@ -238,7 +238,7 @@ python3 day3_operators.py
    ```
    Check `s1 == s2` and `s1 is s2`. Explain the result.
 
-(Solutions: ../../solutions/week-01/day-3.md)
+(Solutions: ../solutions/week-01/day-3.md)
 
 ## Self-check
 

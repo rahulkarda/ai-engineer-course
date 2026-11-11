@@ -95,4 +95,4 @@ Top 5:
 - 60–74% — Revise Days 1–6 on the weak topics, then retake
 - < 60% — Repeat the week before proceeding
 
-Answer key: ../../solutions/week-01/assessment.md
+Answer key: ../solutions/week-01/assessment.md

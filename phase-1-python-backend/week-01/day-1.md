@@ -183,7 +183,7 @@ pip install -r requirements.txt
 
 5. In two sentences, explain what happens to a package you install globally (outside a venv) when you activate a venv, and why that isolation matters on a team with multiple projects.
 
-(Solutions: ../../solutions/week-01/day-1.md)
+(Solutions: ../solutions/week-01/day-1.md)
 
 ## Self-check
 

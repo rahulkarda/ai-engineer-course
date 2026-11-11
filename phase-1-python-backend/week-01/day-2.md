@@ -208,7 +208,7 @@ python3 day2_types.py
 
 5. Annotate three variables of different types with type hints. Install `mypy` (`pip install mypy`) and run `mypy your_script.py`. Confirm it reports no errors. Intentionally use the wrong type and see what error mypy produces.
 
-(Solutions: ../../solutions/week-01/day-2.md)
+(Solutions: ../solutions/week-01/day-2.md)
 
 ## Self-check
 

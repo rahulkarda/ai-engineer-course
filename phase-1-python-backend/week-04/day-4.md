@@ -53,9 +53,9 @@ a.append(b)  # a -> b -> a: neither refcount reaches zero when we del a, b
 
 CPython includes a supplemental cyclic GC (`gc` module) that periodically scans for groups of objects whose references form cycles but are unreachable from any root (no live name in any frame points to them). It uses a mark-and-sweep variant.
 
-**Generations**: Objects are sorted into three generations (0, 1, 2). Newly allocated objects start in generation 0. If they survive a collection of gen-0, they are promoted to gen-1; surviving gen-1 promotes to gen-2. Gen-0 is collected most frequently (threshold: ~700 allocations), gen-2 least frequently. Long-lived objects accumulate in gen-2 and are rarely re-scanned, which is efficient.
+**Generations**: Objects are sorted into three generations (0, 1, 2). Newly allocated objects start in generation 0. If they survive a collection of gen-0, they are promoted to gen-1; surviving gen-1 promotes to gen-2. Gen-0 is collected most frequently (threshold: ~700 net tracked-object allocations, i.e. allocations minus deallocations of tracked objects), gen-2 least frequently. Long-lived objects accumulate in gen-2 and are rarely re-scanned, which is efficient.
 
-`gc.collect(generation)` triggers a collection manually. `gc.get_count()` returns `(gen0, gen1, gen2)` allocation counts since last collection. `gc.get_threshold()` returns the thresholds.
+`gc.collect(generation)` triggers a collection manually. `gc.get_count()` returns `(gen0, gen1, gen2)` — the number of objects *currently tracked* in each generation right now (not allocation deltas since the last collection). `gc.get_threshold()` returns the thresholds.
 
 ### id() and identity vs equality
 

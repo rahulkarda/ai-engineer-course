@@ -392,7 +392,7 @@ Ten exercises integrating everything from this week. These are harder — expect
 
 10. Write a script that: (a) creates `output.txt` and writes the numbers 1–100 one per line, (b) reads it back, (c) prints only the lines whose integer value is divisible by 7. Use `pathlib.Path` throughout.
 
-(Solutions: ../../solutions/week-01/day-6.md)
+(Solutions: ../solutions/week-01/day-6.md)
 
 ## Self-check
 

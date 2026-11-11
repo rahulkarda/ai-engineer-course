@@ -61,7 +61,7 @@ class AuditMixin:
         cls._audit_log = []
 ```
 
-Override `deposit` and `withdraw` in the mixin to append `f"{datetime.utcnow().isoformat()} {self.__class__.__name__}.{method}({amount})"` before calling `super()`. Apply to `CurrentAccount`. Write a test that checks `CurrentAccount._audit_log` is populated after a withdrawal.
+Override `deposit` and `withdraw` in the mixin to append `f"{datetime.now(timezone.utc).isoformat()} {self.__class__.__name__}.{method}({amount})"` before calling `super()`. Apply to `CurrentAccount`. Write a test that checks `CurrentAccount._audit_log` is populated after a withdrawal.
 
 **Task 3 — MRO diamond check**
 

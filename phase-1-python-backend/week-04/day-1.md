@@ -1,6 +1,6 @@
 # Phase 1 · Week 04 · Day 1 — Iterables, Iterators & Generators
 
-> Objective: Understand Python's iterator protocol, implement custom iterables, and harness generators for memory-efficient lazy sequences.  ·  Time: ~1 hr  ·  Prereqs: [[week-03/day-5]] (functions, *args/**kwargs)
+> Objective: Understand Python's iterator protocol, implement custom iterables, and harness generators for memory-efficient lazy sequences.  ·  Time: ~1 hr  ·  Prereqs: [[week-03/day-7]] (full OOP: classes, dunder methods, protocols)
 
 ## Concept
 

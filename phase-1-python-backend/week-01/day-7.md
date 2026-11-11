@@ -419,4 +419,4 @@ python expense_tracker.py total
 
 After finishing the build, work through the **Week 1 Assessment** (`assessment.md`).
 
-Reference implementation: ../../solutions/week-01/day-7.md
+Reference implementation: ../solutions/week-01/day-7.md

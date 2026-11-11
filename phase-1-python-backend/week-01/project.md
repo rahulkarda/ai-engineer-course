@@ -2,7 +2,7 @@
 
 > Integrates: variables, types, operators, conditionals, loops, strings, I/O, logging, pathlib, JSON  ·  Target: ~3 hr build
 
-Reference implementation: ../../solutions/week-01/project.md
+Reference implementation: ../solutions/week-01/project.md
 
 ---
 

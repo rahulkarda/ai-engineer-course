@@ -184,7 +184,7 @@ if __name__ == "__main__":
 4. Reverse the string `"Python"` using slicing. No loops, no built-in `reversed()`.
 5. Encode `"café"` to UTF-8 bytes and decode it back. Print both the `bytes` object and the recovered `str`.
 
-(Solutions: ../../solutions/week-01/day-5.md)
+(Solutions: ../solutions/week-01/day-5.md)
 
 ## Self-check
 

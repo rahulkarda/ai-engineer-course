@@ -147,6 +147,7 @@ Comprehensive demonstration of Python 3.12+ type system features.
 """
 from __future__ import annotations
 
+import functools
 import logging
 import time
 from typing import (
@@ -327,8 +328,13 @@ R = TypeVar("R")
 
 
 def timed(func: Callable[P, R]) -> Callable[P, R]:
-    """Decorator that logs execution time, preserving the original signature."""
+    """Decorator that logs execution time, preserving the original signature.
 
+    @functools.wraps copies __name__, __doc__, __wrapped__, etc. from func
+    onto wrapper, so the decorated function still introspects correctly.
+    """
+
+    @functools.wraps(func)
     def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:
         start = time.perf_counter()
         result = func(*args, **kwargs)
