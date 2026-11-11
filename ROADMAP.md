@@ -43,6 +43,11 @@ Total budget: ~1,000–1,170 study hours.
 - Agent ecosystems: CrewAI, AutoGen, LlamaIndex, Agno, Copilot Studio
 - Extra domains: Graph RAG, multimodal, voice AI, fine-tuning/LoRA
 
+## Supplementary wave (add AFTER main build — sourced from market scan)
+
+- **Frameworks/tools gaps**: DSPy (prompt optimization), NeMo Guardrails + Guardrails AI, richer Claude ecosystem (Batches API, Files API, prompt caching, server-side tools). Fold into P5/P6.
+- **Frontier capabilities** (new elective module): voice/realtime agents, computer-use/browser agents, reasoning models/test-time compute, long-term memory (Mem0, Letta).
+
 ## Folder layout
 
 ```
